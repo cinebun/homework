@@ -28,14 +28,20 @@ const props = withDefaults(defineProps<IProps>(), {
   padding: 16px 32px;
   font-size: 1rem;
   line-height: 1.5;
-  color: var(--color-white);
-  background: var(--color-primary);
+  color: #1e3a8a;
+  background: #87ceeb;
+  border: 2px solid #4682b4;
   border-radius: 16px;
 
-  &[data-layout='secondary'] {
-    color: var(--color-primary);
-    background-color: var(--color-transparent);
-    border-color: var(--color-primary);
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
+}
+
+&[data-layout='secondary'] {
+  color: #1e3a8a; 
+  background-color: transparent;
+  border-color: #4682b4;
 }
 </style>
